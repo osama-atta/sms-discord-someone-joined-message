@@ -1,7 +1,10 @@
 import sendingEmail
 import discord
+import os
+from dotenv import load_dotenv
 
-TOKEN = "OTg0MjQwNzY2NzI3NjQzMjM2.GtUhYY.bB4PSRYXJOKiRg0VCoblNYEq1JeVC9EpTVsMHE"
+load_dotenv()
+TOKEN = os.getenv("DISCORD_KEY")
 client = discord.Client()
 
 
